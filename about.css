@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(225, 239, 251) !important;
+    padding: 10px;
+}
+.row{
+    margin: 30px;
+    margin-left: 40px;
+    padding: 50px;
+    margin-right: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.col{
+    gap:40px;
+    border: black;
+    height: 500px;
+    margin-top: 40px;
+    padding: 30px;
+}
+
+
+#countryData {
+    display: grid;
+    
+}
+
+/* General grid item styling */
+.grid-item {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    height: 400px;
+    overflow-y: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for images */
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar{
+    box-shadow: 10px 6px 3px rgb(1, 76, 6);
+}

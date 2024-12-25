@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Info</title>
+    <link rel="stylesheet" href="about.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar bg-success p-2 text-dark bg-opacity-50">
+        <div class="container-fluid">
+            <img src="/images/iconCount.png" style="border-radius: 20%; width: 120px; height: 120px;">
+            <p style="text-align:right; font-size: 30px;" > <b> Geographical Country Info</b></p>
+            <form class="d-flex" role="search" onsubmit="return connecCountryData(event)">
+                <input class="form-control me-2" type="search" id="countryInput" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Country Data Display -->
+
+    <br>
+
+    <h3 style="text-align: center; color: rgb(81, 7, 151); font-family: Georgia, 'Times New Roman', Times, serif;">Explore Countries with Detailed Information</h3>
+    <div class="row">
+
+        <div class="col-lg-6 col-md-12 col-sm-12 border border-primary" id="countryData"> </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 border border-primary" id="datacountry"> </div>
+    </div>
+
+    <!-- Paragraph Section -->
+    <div class="container mt-4">
+        
+        <p>This page provides valuable information about countries across the world. Whether you're a traveler, student, or enthusiast, you can easily explore details such as country names, population, area, flags, and more.</p>
+        <p>With a simple search functionality, you can quickly find data about any country. We aim to make country information accessible and easy to understand for everyone. The data is presented in a user-friendly interface to enhance the browsing experience.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-4 p-3 text-center">
+        <div class="container">
+            <p>&copy; 2024 Country Info. All rights reserved.</p>
+            <p><a href="https://www.imf.org/en/Countries">info@countryinfo.com</a></p>
+            <p>Follow us on <a href="https://www.facebook.com/travelwithacause/" class="text-white">Facebook</a>, <a href="https://x.com/i/flow/login" class="text-white">Twitter</a>, <a href="https://www.instagram.com/p/C2hAj2ahJgD/" class="text-white">Instagram</a></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap and Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="about.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country and Weather Info</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-success-subtle ">
+    <div class="container-fluid">
+    
+      <img src="/images/weathericon.png" style="width: 80px; height: 100px; border-radius: 40%;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Country Details</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="turistplace.html">Services</a></li>
+              <li><a class="dropdown-item" href="#contact">Contact</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#feedback">Feedback</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" id="countryInput" placeholder="Enter country name" aria-label="Search">
+          <button class="btn btn-outline-success" type="button" style="color: aliceblue;" onclick="connectWeatherData()">Search</button>
+        </form>
+        
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-4">
+    <h1 class="text-center mb-4">Search for Country & Weather Info</h1>
+
+    <img src="/images/countryicon.jpeg">
+    
+    <!-- Weather and Country Info Results -->
+    <div id="weatherResults" class="row">
+
+      
+    </div>
+
+    <!--card-->
+    <!-- Country Info Section -->
+    <div class="card w-50" id="countryInfo" class="mt-4">
+      <div class="card-body">
+        <h5 class="card-title" style="color: blue; "><b> Country Info Section</b></h5>
+        <p class="card-text">This section provides detailed data about a specific country, including its name, population, area, capital, and flag.
+          <br> <b>Click the  Button to view the country's key details!</b>
+          <div id="countryData"></div></p>
+        <a href="#" class="btn btn-primary" onclick="connecCountryData()">Show Country Data</a>
+      </div>
+    </div>
+
+ 
+
+   <!-- Footer -->
+   <footer class="bg-dark text-white mt-4 p-3 text-center">
+    <div class="container">
+        <p>&copy; 2024 Country Info. All rights reserved.</p>
+        <p><a href="https://www.imf.org/en/Countries">info@countryinfo.com</a></p>
+        <p>Follow us on <a href="https://www.facebook.com/travelwithacause/" class="text-white">Facebook</a>, <a href="https://x.com/i/flow/login" class="text-white">Twitter</a>, <a href="https://www.instagram.com/p/C2hAj2ahJgD/" class="text-white">Instagram</a></p>
+    </div>
+   </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+</html>
