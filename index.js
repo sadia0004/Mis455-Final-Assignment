@@ -9,7 +9,7 @@ function connectWeatherData() {
 
     // Fetch country data
     
-    var weatherUrl = `http://api.weatherapi.com/v1/current.json?key=cdac4ed7fa72480189f142745242412&q=${countryName}&aqi=no`;  // Replace with your API key
+    var weatherUrl = `http://api.weatherapi.com/v1/current.json?key=cdac4ed7fa72480189f142745242412&q=${countryName}&aqi=no`;
     
    
 

@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const name = document.getElementById("name").value.trim();
         const email = document.getElementById("email").value.trim();
         const message = document.getElementById("message").value.trim();
-        const rating = document.querySelector('input[name="rating"]:checked'); // Get selected radio button
+        const rating = document.querySelector('input[name="rating"]:checked');
         
         // Check if any field or rating is empty
         if (!name || !email || !message || !rating) {
