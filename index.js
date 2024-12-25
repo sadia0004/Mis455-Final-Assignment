@@ -55,7 +55,7 @@ function displayCountryData(data) {
       <p><strong><b>Capital:</b></strong> ${data.capital ? data.capital[0] : 'No capital available'}</p>
       <p><strong><b>Area:</b></strong> ${data.area} km²</p>
       <p><strong><b>Population:</b></strong> ${data.population}</p>
-      <img src="${data.flags.png}" alt="Flag" width="200px">
+      <img src="${data.flags.png}" alt="Flag" width="250px">
     `;
 }
 
