@@ -1,0 +1,29 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5eff9;
+  }
+  
+  .card {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  #starRating i {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  #starRating .text-warning {
+    color: #ffc107 !important;
+  }
+
+  img{
+    width: 250px;
+    height: 100px;
+  }
+
+  .navbar{
+    box-shadow: 10px 6px 4px rgb(13, 3, 77);
+    border-radius: 4%;
+  }
