@@ -15,10 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
             const modal = new bootstrap.Modal(document.getElementById("warningModal"));
             modal.show();
         } else {
-            
+           
             alert(`Thank you for your feedback, ${name}! You rated us ${rating.value}/5.`);
             
-            
+           
             form.reset();
         }
     });
