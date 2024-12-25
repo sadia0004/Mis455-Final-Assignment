@@ -51,32 +51,35 @@
 
   <!-- Main Content -->
   <div class="container mt-4">
-    <h1 class="text-center mb-4">Search for Country & Weather Info</h1>
+    <h1 class="text-center mb-4" >Search for Country & Weather Info</h1>
 
     <img src="/images/countryicon.jpeg">
     
     <!-- Weather and Country Info Results -->
-    <div id="weatherResults" class="row">
 
-      
+    <br> <br>
+    <div id="weatherResults" class="row " >
     </div>
+    
 
+    <br><br>
     <!--card-->
     <!-- Country Info Section -->
-    <div class="card w-50" id="countryInfo" class="mt-4">
+    <div class="card w-50 bg-primary-subtle" id="countryInfo" class="mt-4">
       <div class="card-body">
-        <h5 class="card-title" style="color: blue; "><b> Country Info Section</b></h5>
+        <h5 class="card-title" style="color: blue; font-style: italic; font-size: 20px;"><b> Country Info Section</b></h5>
         <p class="card-text">This section provides detailed data about a specific country, including its name, population, area, capital, and flag.
           <br> <b>Click the  Button to view the country's key details!</b>
           <div id="countryData"></div></p>
-        <a href="#" class="btn btn-primary" onclick="connecCountryData()">Show Country Data</a>
+          <button class="btn btn-primary" onclick="connecCountryData()">Show Country Data</button>
+
       </div>
     </div>
 
  
 
    <!-- Footer -->
-   <footer class="bg-dark text-white mt-4 p-3 text-center">
+   <footer class="bg-dark bg-gradient text-white mt-4 p-3 text-center">
     <div class="container">
         <p>&copy; 2024 Country Info. All rights reserved.</p>
         <p><a href="https://www.imf.org/en/Countries">info@countryinfo.com</a></p>

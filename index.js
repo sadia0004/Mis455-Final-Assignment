@@ -51,10 +51,10 @@ function displayCountryData(data) {
     var countryInfoDiv = document.getElementById("countryData");
     countryInfoDiv.innerHTML = `
       <h3>Country Info</h3>
-      <p><strong>Name:</strong> ${data.name.common}</p>
-      <p><strong>Capital:</strong> ${data.capital ? data.capital[0] : 'No capital available'}</p>
-      <p><strong>Area:</strong> ${data.area} km²</p>
-      <p><strong>Population:</strong> ${data.population}</p>
+      <p><strong><b>Name:</b></strong> ${data.name.common}</p>
+      <p><strong><b>Capital:</b></strong> ${data.capital ? data.capital[0] : 'No capital available'}</p>
+      <p><strong><b>Area:</b></strong> ${data.area} km²</p>
+      <p><strong><b>Population:</b></strong> ${data.population}</p>
       <img src="${data.flags.png}" alt="Flag" width="200px">
     `;
 }
@@ -72,10 +72,10 @@ function displayWeatherData(data) {
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">${data.location.name}, ${data.location.country}</h5>
-              <p class="card-text">Weather: ${data.current.condition.text}</p>
-              <p class="card-text">Temperature: ${data.current.temp_c}°C</p>
-              <p class="card-text">Humidity: ${data.current.humidity}%</p>
-              <p class="card-text">Wind Speed: ${data.current.wind_kph} km/h</p>
+              <p class="card-text"><b>Weather:</b> ${data.current.condition.text}</p>
+              <p class="card-text"><b>Temperature:</b> ${data.current.temp_c}°C</p>
+              <p class="card-text"><b>Humidity:</b> ${data.current.humidity}%</p>
+              <p class="card-text"><b>Wind Speed:</b> ${data.current.wind_kph} km/h</p>
               <img src="https:${data.current.condition.icon}" alt="Weather Icon">
             </div>
           </div>
